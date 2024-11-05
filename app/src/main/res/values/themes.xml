@@ -1,8 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+    <attr name="appTextColor"/>
+    <attr name="appBackgroundColor"/>
+    <attr name="appButtonColor"/>
+    <attr name="appButtonTextColor"/>
+
     <style name="Base.Theme.XXXTestAppXXX" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="appTextColor">@color/dark</item>
+        <item name="appBackgroundColor">@color/white</item>
+        <item name="appButtonColor">@color/grey</item>
+        <item name="appButtonTextColor">@color/white</item>
     </style>
 
     <style name="Theme.XXXTestAppXXX" parent="Base.Theme.XXXTestAppXXX" />
