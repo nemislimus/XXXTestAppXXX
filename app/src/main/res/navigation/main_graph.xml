@@ -14,6 +14,12 @@
             android:id="@+id/action_mainFragment_to_noNameFragment"
             app:destination="@id/noNameFragment" />
         <action
+            android:id="@+id/action_mainFragment_to_vitalyFragment"
+            app:destination="@id/vitalyFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_artemSFragment"
+            app:destination="@id/artemSFragment" />
+        <action
             android:id="@+id/action_mainFragment_to_deviceFragment"
             app:destination="@id/deviceFragment" />
     </fragment>
@@ -22,6 +28,13 @@
         android:name="com.practicum.xxxtestappxxx.fragments.NoNameFragment"
         android:label="fragment_no_name"
         tools:layout="@layout/fragment_no_name" />
+    <fragment
+        android:id="@+id/artemSFragment"
+        android:name="com.practicum.xxxtestappxxx.fragments.ArtemSFragment"
+        android:label="fragment_artem_s"
+        tools:layout="@layout/fragment_artem_s" />
+
+
     <fragment
         android:id="@+id/deviceFragment"
         android:name="com.practicum.xxxtestappxxx.fragments.DeviceFragment"
