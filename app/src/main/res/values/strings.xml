@@ -3,4 +3,6 @@
     <string name="xxx_work_test_xxx">XXX_WORK_TEST_XXX</string>
     <string name="noname">NoName</string>
     <string name="noname_fragment">THIS IS NO_NAME FRAGMENT</string>
+    <string name="main_fragment_artems_btn_text">ArtemSFragment</string>
+    <string name="artem_s_fragment_title">Artem S Fragment</string>
 </resources>
