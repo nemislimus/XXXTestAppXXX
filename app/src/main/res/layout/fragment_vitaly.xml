@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="?attr/appBackgroundColor">
+    android:background="?attr/appBackgroundColor"
+    tools:context=".fragments.VitalyFragment">
 
     <TextView
         android:id="@+id/tvTextVitaly"
