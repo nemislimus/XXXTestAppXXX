@@ -30,7 +30,7 @@ class MainFragment: Fragment() {
 
         binding.btnNoName.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainFragment_to_noNameFragment
+                R.id.action_mainFragment_to_anreyKFragment
             )
         }
     }

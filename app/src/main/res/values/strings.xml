@@ -3,4 +3,7 @@
     <string name="xxx_work_test_xxx">XXX_WORK_TEST_XXX</string>
     <string name="noname">NoName</string>
     <string name="noname_fragment">THIS IS NO_NAME FRAGMENT</string>
+    <string name="AK_prev_button">Назад</string>
+    <string name="AK_next_button">Вперед</string>
+    <string name="AK_title">Экран члена команды Андрей</string>
 </resources>
