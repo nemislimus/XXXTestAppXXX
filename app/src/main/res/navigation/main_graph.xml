@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_mainFragment_to_noNameFragment"
             app:destination="@id/noNameFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_vitalyFragment"
+            app:destination="@id/vitalyFragment" />
     </fragment>
     <fragment
         android:id="@+id/noNameFragment"
         android:name="com.practicum.xxxtestappxxx.fragments.NoNameFragment"
         android:label="fragment_no_name"
         tools:layout="@layout/fragment_no_name" />
+    <fragment
+        android:id="@+id/vitalyFragment"
+        android:name="com.practicum.xxxtestappxxx.fragments.VitalyFragment"
+        android:label="fragment_vitaly"
+        tools:layout="@layout/fragment_vitaly" />
 </navigation>
