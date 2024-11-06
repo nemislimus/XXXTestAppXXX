@@ -33,5 +33,9 @@ class MainFragment: Fragment() {
                 R.id.action_mainFragment_to_noNameFragment
             )
         }
+
+        binding.btnDevice.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_deviceFragment)
+        }
     }
 }
