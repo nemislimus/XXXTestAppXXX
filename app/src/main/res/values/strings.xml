@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">XXXTestAppXXX</string>
-    <string name="xxx_work_test_xxx">XXX_WORK_DIFF_TEST_XXX</string>
-    <string name="noname">NoName</string>
-    <string name="noname_fragment">THIS IS NO_NAME FRAGMENT</string>
-    <string name="team_logo_test">team_logo_test</string>
+    <string name="app_name">XXXTestAppXXX2</string>
+    <string name="xxx_work_test_xxx">XXX_WORK_DIFF_TEST_XXX2</string>
+    <string name="noname">NoName2</string>
+    <string name="noname_fragment">THIS IS NO_NAME FRAGMENT2</string>
+    <string name="team_logo_test">team_logo_test2</string>
 </resources>
