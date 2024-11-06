@@ -10,7 +10,7 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/artem_s_fragment_title"
+        android:text="@string/main_fragment_artems_btn_text"
         android:textColor="?attr/appTextColor"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
