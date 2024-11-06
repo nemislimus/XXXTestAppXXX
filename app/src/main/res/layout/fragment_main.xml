@@ -7,17 +7,28 @@
     android:background="?attr/appBackgroundColor"
     tools:context=".fragments.MainFragment">
 
+    <ImageView
+        android:id="@+id/ivMainLogo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/team_logo_test"
+        android:src="@drawable/team_logo_new"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
     <Button
-        android:id="@+id/btnNoName"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnNoNameDiff"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="?attr/appButtonColor"
         android:text="@string/noname"
         android:textColor="?attr/appButtonTextColor"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/ivMainLogo" />
 
     <Button
         android:id="@+id/btnVitaly"
