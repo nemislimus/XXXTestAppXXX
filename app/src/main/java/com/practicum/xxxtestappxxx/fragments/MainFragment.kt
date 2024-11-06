@@ -33,5 +33,11 @@ class MainFragment: Fragment() {
                 R.id.action_mainFragment_to_noNameFragment
             )
         }
+
+        binding.btnVitaly.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_mainFragment_to_vitalyFragment
+            )
+        }
     }
 }
