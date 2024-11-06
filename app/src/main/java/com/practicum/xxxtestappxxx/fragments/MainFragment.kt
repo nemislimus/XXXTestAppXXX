@@ -10,7 +10,7 @@ import com.practicum.xxxtestappxxx.R
 import com.practicum.xxxtestappxxx.databinding.FragmentMainBinding
 
 
-class MainFragment : Fragment() {
+class MainFragment: Fragment() {
 
     private var _binding: FragmentMainBinding? = null
     private val binding: FragmentMainBinding
@@ -31,6 +31,12 @@ class MainFragment : Fragment() {
         binding.btnNoName.setOnClickListener {
             findNavController().navigate(
                 R.id.action_mainFragment_to_noNameFragment
+            )
+        }
+
+        binding.btnVitaly.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_mainFragment_to_vitalyFragment
             )
         }
 
