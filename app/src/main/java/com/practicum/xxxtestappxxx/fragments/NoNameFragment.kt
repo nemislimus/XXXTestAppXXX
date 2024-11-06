@@ -36,7 +36,7 @@ class NoNameFragment: Fragment() {
     private fun changeColor(): Int {
         if (clickFlag) {
             clickFlag = false
-            return requireContext().getColor(R.color.crimson)
+            return requireContext().getColor(R.color.grey)
         } else {
             clickFlag = true
             return requireContext().getColor(R.color.blue)
