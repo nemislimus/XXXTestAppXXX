@@ -39,5 +39,11 @@ class MainFragment: Fragment() {
                 R.id.action_mainFragment_to_vitalyFragment
             )
         }
+
+        binding.btnArtemSFragment.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_artemSFragment)
+        }
+
+
     }
 }
