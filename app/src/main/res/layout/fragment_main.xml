@@ -19,7 +19,7 @@
         />
 
     <Button
-        android:id="@+id/btnNoNameDiff"
+        android:id="@+id/btnNoName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="?attr/appButtonColor"
@@ -40,7 +40,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnNoName"
+        app:layout_constraintTop_toBottomOf="@id/btnArtemSFragment"
         />
 
     <Button
@@ -53,7 +53,7 @@
         android:textColor="?attr/appButtonTextColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnNoNameDiff" />
+        app:layout_constraintTop_toBottomOf="@id/btnNoName" />
 
 
 
