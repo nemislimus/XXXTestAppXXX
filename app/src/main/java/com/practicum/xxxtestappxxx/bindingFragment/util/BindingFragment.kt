@@ -12,6 +12,7 @@ abstract class BindingFragment<T : ViewBinding> : Fragment() {
     private var _binding: T? = null
     protected val binding: T get() = _binding!!
 
+    /**Заполненый ViewBinding определяеться в наследнике*/
     abstract fun createBinding(inflater: LayoutInflater, container: ViewGroup?): T
 
     override fun onCreateView(
@@ -30,8 +31,8 @@ abstract class BindingFragment<T : ViewBinding> : Fragment() {
     }
 
     /**Оставил для примера. В принципе Виталий прав,
-     можно просто делать что нужно перед супер методом в наследнике
-    **/
-    open fun beforeDestroyBinding(){}
+    можно просто делать что нужно перед супер методом в наследнике
+     **/
+    open fun beforeDestroyBinding() {}
 
 }
