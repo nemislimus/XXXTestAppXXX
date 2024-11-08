@@ -8,4 +8,5 @@
     <string name="filter">Фильтр</string>
     <string name="list">Список</string>
     <string name="exit">Выход</string>
+    <string name="device">Устройства</string>
 </resources>

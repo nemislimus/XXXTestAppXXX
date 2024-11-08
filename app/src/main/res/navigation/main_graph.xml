@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_mainFragment_to_filterListFragment"
             app:destination="@id/filterListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_deviceFragment"
+            app:destination="@id/deviceFragment" />
     </fragment>
     <fragment
         android:id="@+id/noNameFragment"
@@ -43,4 +46,8 @@
         android:name="com.practicum.xxxtestappxxx.fragments.VitalyFragment"
         android:label="fragment_vitaly"
         tools:layout="@layout/fragment_vitaly" />
+    <fragment
+        android:id="@+id/deviceFragment"
+        android:name="com.practicum.xxxtestappxxx.fragments.DeviceFragment"
+        android:label="DeviceFragment" />
 </navigation>

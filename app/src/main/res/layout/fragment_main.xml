@@ -51,22 +51,33 @@
         android:backgroundTint="?attr/appButtonColor"
         android:text="@string/main_fragment_artems_btn_text"
         android:textColor="?attr/appButtonTextColor"
-        app:layout_constraintBottom_toTopOf="@id/btn_filter_list"
+        app:layout_constraintBottom_toTopOf="@id/btn_device"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnVitaly" />
+
+    <Button
+        android:id="@+id/btn_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/device"
+        android:textColor="?attr/appButtonTextColor"
+        app:layout_constraintBottom_toTopOf="@id/btn_filter_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnArtemSFragment" />
 
     <Button
         android:id="@+id/btn_filter_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:backgroundTint="?attr/appButtonColor"
         android:text="filter list"
         android:textColor="?attr/appButtonTextColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnArtemSFragment" />
+        app:layout_constraintTop_toBottomOf="@id/btn_device" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
