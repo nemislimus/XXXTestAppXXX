@@ -15,6 +15,23 @@
         android:theme="@style/Theme.XXXTestAppXXX"
         tools:targetApi="31">
         <activity
+            android:name=".VacancyViewActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hh.diploma"
+                    android:scheme="xxx-team" />
+
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
