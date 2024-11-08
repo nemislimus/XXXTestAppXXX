@@ -11,7 +11,7 @@ import androidx.core.view.MenuProvider
 import androidx.viewbinding.ViewBinding
 import com.practicum.xxxtestappxxx.R
 
-abstract class FinishFragment<T : ViewBinding> : BindingFragment<T>(), MenuProvider {
+abstract class FilterFragment<T : ViewBinding> : BindingFragment<T>(), MenuProvider {
 
     /** View Toolbar, в которую будем заливать меню
      * Меню, которую будет заливаться должно быть добалено в res/menu
@@ -39,6 +39,8 @@ abstract class FinishFragment<T : ViewBinding> : BindingFragment<T>(), MenuProvi
         // При этом не важно, какое указано в самой разметке layout,
         // и указано ли.
         // Все равно будет заполнено указаное здесь
+        // В примере специально выбрал другое меню в layout-разметке
+        // для демонстрации
         menuInflater.inflate(R.menu.filter_menu, menu)
     }
 

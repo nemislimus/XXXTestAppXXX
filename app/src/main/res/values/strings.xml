@@ -6,4 +6,6 @@
     <string name="team_logo_test">team_logo_test2</string>
     <string name="main_fragment_artems_btn_text">artems_fragment</string>
     <string name="filter">Фильтр</string>
+    <string name="list">Список</string>
+    <string name="exit">Выход</string>
 </resources>
