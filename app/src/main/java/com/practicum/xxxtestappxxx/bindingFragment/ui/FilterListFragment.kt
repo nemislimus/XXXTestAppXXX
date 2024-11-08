@@ -45,6 +45,9 @@ class FilterListFragment : FilterFragment<FragmentFilterListBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        viewModel.getProdListOne()
+
         binding.rvList.adapter = listAdapter
 
         binding.btnV1.setOnClickListener {
@@ -59,6 +62,9 @@ class FilterListFragment : FilterFragment<FragmentFilterListBinding>() {
             viewModel.getProdListTree()
         }
 
+        viewModel.stateLiveDataObserver().observe(viewLifecycleOwner){
+            render(it)
+        }
 
     }
 

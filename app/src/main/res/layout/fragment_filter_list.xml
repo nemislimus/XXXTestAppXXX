@@ -49,19 +49,19 @@
             android:id="@+id/btn_V1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вариант 1"/>
+            android:text="Вар.1"/>
 
         <Button
             android:id="@+id/btn_V2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вариант 2"/>
+            android:text="Вар.2"/>
 
         <Button
             android:id="@+id/btn_V3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вариант 3"/>
+            android:text="Вар.3"/>
 
     </LinearLayout>
 
