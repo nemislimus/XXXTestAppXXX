@@ -38,4 +38,9 @@
         android:name="com.practicum.xxxtestappxxx.bindingFragment.ui.FilterListFragment"
         android:label="FilterListFragment"
         tools:layout="@layout/fragment_filter_list" />
+    <fragment
+        android:id="@+id/vitalyFragment"
+        android:name="com.practicum.xxxtestappxxx.fragments.VitalyFragment"
+        android:label="fragment_vitaly"
+        tools:layout="@layout/fragment_vitaly" />
 </navigation>
