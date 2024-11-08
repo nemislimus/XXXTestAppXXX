@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_mainFragment_to_artemSFragment"
             app:destination="@id/artemSFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_filterListFragment"
+            app:destination="@id/filterListFragment" />
     </fragment>
     <fragment
         android:id="@+id/noNameFragment"
@@ -30,4 +33,9 @@
         android:name="com.practicum.xxxtestappxxx.fragments.ArtemSFragment"
         android:label="fragment_artem_s"
         tools:layout="@layout/fragment_artem_s" />
+    <fragment
+        android:id="@+id/filterListFragment"
+        android:name="com.practicum.xxxtestappxxx.bindingFragment.ui.FilterListFragment"
+        android:label="FilterListFragment"
+        tools:layout="@layout/fragment_filter_list" />
 </navigation>

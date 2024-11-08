@@ -10,7 +10,7 @@ import com.practicum.xxxtestappxxx.R
 import com.practicum.xxxtestappxxx.databinding.FragmentMainBinding
 
 
-class MainFragment: Fragment() {
+class MainFragment : Fragment() {
 
     private var _binding: FragmentMainBinding? = null
     private val binding: FragmentMainBinding
@@ -19,7 +19,7 @@ class MainFragment: Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View? {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
         return binding.root
@@ -28,7 +28,7 @@ class MainFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnNoName.setOnClickListener {
+        binding.btnNoNameDiff.setOnClickListener {
             findNavController().navigate(
                 R.id.action_mainFragment_to_noNameFragment
             )
@@ -42,6 +42,10 @@ class MainFragment: Fragment() {
 
         binding.btnArtemSFragment.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_artemSFragment)
+        }
+
+        binding.btnFilterList.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_filterListFragment)
         }
 
 
