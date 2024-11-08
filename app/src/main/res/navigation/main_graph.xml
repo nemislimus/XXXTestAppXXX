@@ -20,6 +20,9 @@
             android:id="@+id/action_mainFragment_to_artemSFragment"
             app:destination="@id/artemSFragment" />
         <action
+            android:id="@+id/action_mainFragment_to_filterListFragment"
+            app:destination="@id/filterListFragment" />
+        <action
             android:id="@+id/action_mainFragment_to_deviceFragment"
             app:destination="@id/deviceFragment" />
     </fragment>
@@ -33,8 +36,16 @@
         android:name="com.practicum.xxxtestappxxx.fragments.ArtemSFragment"
         android:label="fragment_artem_s"
         tools:layout="@layout/fragment_artem_s" />
-
-
+    <fragment
+        android:id="@+id/filterListFragment"
+        android:name="com.practicum.xxxtestappxxx.bindingFragment.ui.FilterListFragment"
+        android:label="FilterListFragment"
+        tools:layout="@layout/fragment_filter_list" />
+    <fragment
+        android:id="@+id/vitalyFragment"
+        android:name="com.practicum.xxxtestappxxx.fragments.VitalyFragment"
+        android:label="fragment_vitaly"
+        tools:layout="@layout/fragment_vitaly" />
     <fragment
         android:id="@+id/deviceFragment"
         android:name="com.practicum.xxxtestappxxx.fragments.DeviceFragment"
