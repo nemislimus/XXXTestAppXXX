@@ -28,12 +28,17 @@ abstract class FinishFragment<T : ViewBinding> : BindingFragment<T>(), MenuProvi
 
         super.onViewCreated(view, savedInstanceState)
 
+        //Цепляем наш менюпровайдер к активити
         requireActivity().addMenuProvider(this, viewLifecycleOwner)
         (requireActivity() as AppCompatActivity).setSupportActionBar(getToolbarPanel())
 
     }
 
     override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+        //Заливаем в наш toolbar указанное здесь меню
+        // При этом не важно, какое указано в самой разметке layout,
+        // и указано ли.
+        // Все равно будет заполнено указаное здесь
         menuInflater.inflate(R.menu.filter_menu, menu)
     }
 
