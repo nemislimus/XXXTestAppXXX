@@ -6,11 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
+import androidx.lifecycle.ViewModelProvider
 import com.practicum.xxxtestappxxx.bindingFragment.domain.model.MyProduct
+import com.practicum.xxxtestappxxx.bindingFragment.presentation.FilterListState
+import com.practicum.xxxtestappxxx.bindingFragment.presentation.FilterListViewModel
 import com.practicum.xxxtestappxxx.bindingFragment.util.FilterFragment
 import com.practicum.xxxtestappxxx.databinding.FragmentFilterListBinding
 
 class FilterListFragment : FilterFragment<FragmentFilterListBinding>() {
+
+    private val viewModel by lazy {
+        ViewModelProvider(this)[FilterListViewModel::class.java]
+    }
 
     private val listAdapter: FilterListAdapter by lazy {
         FilterListAdapter(object : FilterListAdapter.Listener {
@@ -39,6 +46,30 @@ class FilterListFragment : FilterFragment<FragmentFilterListBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.rvList.adapter = listAdapter
+
+        binding.btnV1.setOnClickListener {
+            viewModel.getProdListOne()
+        }
+
+        binding.btnV2.setOnClickListener {
+            viewModel.getProdListTwo()
+        }
+
+        binding.btnV3.setOnClickListener {
+            viewModel.getProdListTree()
+        }
+
+
+    }
+
+    private fun render(state: FilterListState) {
+        when (state) {
+            is FilterListState.Content -> {
+                listAdapter.submitList(state.data)
+            }
+
+            FilterListState.Loading -> {}
+        }
     }
 
 }

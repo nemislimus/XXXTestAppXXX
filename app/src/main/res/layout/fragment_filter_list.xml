@@ -36,6 +36,35 @@
         android:orientation="vertical"
         app:layout_constraintGuide_end="16dp" />
 
+    <LinearLayout
+        android:id="@+id/ll_list_cmd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/gl_top_line"
+        app:layout_constraintStart_toStartOf="@id/gl_start_line"
+        app:layout_constraintEnd_toEndOf="@id/gl_end_line">
+
+        <Button
+            android:id="@+id/btn_V1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вариант 1"/>
+
+        <Button
+            android:id="@+id/btn_V2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вариант 2"/>
+
+        <Button
+            android:id="@+id/btn_V3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вариант 3"/>
+
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_list"
         android:layout_width="0dp"
@@ -45,7 +74,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/gl_end_line"
         app:layout_constraintStart_toStartOf="@id/gl_start_line"
-        app:layout_constraintTop_toBottomOf="@id/gl_top_line"
+        app:layout_constraintTop_toBottomOf="@id/ll_list_cmd"
         tools:listitem="@layout/list_item"/>
 
 
